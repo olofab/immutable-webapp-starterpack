@@ -11,7 +11,6 @@ resource "aws_s3_bucket" "bucket-host" {
     Managed = "Terraform"
   }
 }
-
 resource "aws_s3_bucket" "bucket-asset" {
   bucket = "my-tf-bucket-asset"
   acl    = "private"
