@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const sha = 1;
+const sha = process.env.GITHUB_SHA || 1;
 const environment =  "test";
 const url = 'https://my-tf-bucket-asset.s3.eu-north-1.amazonaws.com' ;
 const date = new Date().toISOString();
